@@ -1,7 +1,11 @@
 <html>
+    <head>
+        <title>Index</title>
+        {% include 'css.html' %}
+    </head>
     <body>
         <header>
-            <h1>Header</h1>
+            {% include 'header.html' %}
         </header>
         {% for folder in folders %}
             <a href="{{ folder }}">{{ folder }}</a>
